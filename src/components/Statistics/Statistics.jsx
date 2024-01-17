@@ -1,37 +1,23 @@
-import styled from 'styled-components';
+import { StatisticsList, StatisticsListItem } from './Statistics.style';
+
 export const Statistics = ({ good, neutral, bad, total, feedback }) => {
   return (
-    <Div1>
-      <Div2>
+    <StatisticsList>
+      <StatisticsListItem>
         Good <span>{good}</span>
-      </Div2>
-      <Div2>
+      </StatisticsListItem>
+      <StatisticsListItem>
         Neutral <span>{neutral}</span>
-      </Div2>
-      <Div2>
+      </StatisticsListItem>
+      <StatisticsListItem>
         Bad <span>{bad}</span>
-      </Div2>
-      <Div2>
+      </StatisticsListItem>
+      <StatisticsListItem>
         Total <span>{total}</span>
-      </Div2>
-      <Div2>
+      </StatisticsListItem>
+      <StatisticsListItem>
         Positive feedback <span>{feedback}%</span>
-      </Div2>
-    </Div1>
+      </StatisticsListItem>
+    </StatisticsList>
   );
 };
-
-const Div1 = styled.ul`
-  list-style-type: none;
-  display: flex;
-  gap: 10px;
-  padding: 0;
-  flex-direction: column;
-  width: 200px;
-  margin: 0 auto;
-  justify-content: center;
-`;
-const Div2 = styled.li`
-  display: flex;
-  justify-content: space-between;
-`;

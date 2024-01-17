@@ -1,24 +1,16 @@
-// import { Component } from 'react';
-import styled from 'styled-components';
+import { FeedbackContainer } from './Feedback.style';
 
 const Feedback = () => {
   return (
     <>
-      <Div>
+      <FeedbackContainer>
         <h1>Please leave feedback</h1>
-      </Div>
-      <Div>
+      </FeedbackContainer>
+      <FeedbackContainer>
         <h1>Statistics</h1>
-      </Div>
+      </FeedbackContainer>
     </>
   );
 };
-
-const Div = styled.div`
-  display: flex;
-  gap: 10px;
-  flex-direction: column;
-  align-items: center;
-`;
 
 export default Feedback;

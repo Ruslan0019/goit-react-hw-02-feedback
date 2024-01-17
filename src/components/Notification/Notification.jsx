@@ -1,9 +1,5 @@
-import styled from 'styled-components';
-export const Notification = ({ message }) => {
-  return <P>{message}</P>;
-};
+import { Text } from './Notification.style';
 
-const P = styled.p`
-  display: flex;
-  justify-content: center;
-`;
+export const Notification = ({ message }) => {
+  return <Text>{message}</Text>;
+};
